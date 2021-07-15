@@ -7,7 +7,7 @@
 			{% endblock %}
 		</title>
 		{# Run `composer require symfony/webpack-encore-bundle`
-				           and uncomment the following Encore helpers to start using Symfony UX #}
+						           and uncomment the following Encore helpers to start using Symfony UX #}
 		{% block stylesheets %}
 			{#{{ encore_entry_link_tags('app') }}#}
 		{% endblock %}
@@ -24,7 +24,7 @@
 			<ul>
 				{% for conference in conferences %}
 					<li>
-						<a href="{{ path('conference', {id: conference.id }) }}">{{ conference }}</a>
+						<a href="{{ path('conference', {slug: conference.slug }) }}">{{ conference }}</a>
 					</li>
 				{%  endfor %}
 			</ul>
